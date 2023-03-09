@@ -1,0 +1,272 @@
+body {
+  background: rgb(171, 196, 255);
+  background: linear-gradient(
+    167deg,
+    rgba(171, 196, 255, 0.2) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+/* nav bar */
+
+.apb-logo img {
+  margin-right: 1rem;
+  transform: scale(1.5, 1.5);
+  padding-left: 30px;
+}
+header {
+  background: #ccdbfd00;
+  padding: 4rem 4%;
+  box-shadow: none;
+}
+
+.up-bg {
+  height: 670px;
+  position: relative;
+  background-image: url("images/indexpage/dekstop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.room-type,
+.booking-room {
+  margin: 2% 4%;
+}
+
+.hotel-name {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 4em;
+  filter: contrast(20);
+  text-align: center;
+  overflow: hidden;
+}
+
+.hotel-name h1,
+.hotel-name span {
+  color: white;
+  font-size: 20rem;
+  letter-spacing: 1rem;
+  font-family: "Francois One", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate3d(-50%, -50%, 0);
+  text-shadow: 8px 7px 18px #000000;
+}
+
+.hotel-name h1 {
+  animation: letterspacing 7s alternate cubic-bezier(0.2, 0, 0, 1);
+}
+
+.hotel-name span {
+  padding-top: 70%;
+  letter-spacing: 0.2em;
+
+  font-family: "Francois One", sans-serif;
+}
+
+@keyframes letterspacing {
+  0% {
+    letter-spacing: -5rem;
+    filter: blur(0.5rem);
+  }
+
+  50% {
+    filter: blur(0.5rem);
+  }
+
+  700% {
+    letter-spacing: 1rem;
+    filter: blur(1.5rem);
+  }
+
+  100% {
+    letter-spacing: 1rem;
+  }
+}
+
+/* room card */
+
+.head-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #012a4a;
+  padding: 10px;
+}
+
+.room-type .row {
+  display: flex;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #ccdbfd;
+}
+
+.card-title-icon {
+  display: flex;
+}
+
+.card-title-icon i {
+  padding-left: 5px;
+}
+
+.card-text {
+  font-size: 1.7rem;
+}
+
+/* booking */
+
+.wrapper {
+  position: relative;
+  max-width: 1200px;
+  border-radius: 10px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  box-shadow: 20px 20px 80px rgb(206, 206, 206);
+}
+
+.booking-room form,
+.booking-room .details {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+}
+
+.lName {
+  margin-left: 2%;
+}
+
+#bookingbtn {
+  font-size: 3rem;
+  max-width: 30%;
+  margin: auto;
+  margin-top: 50px !important;
+}
+
+.input-field {
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #012a4a;
+  color: #012a4a;
+}
+
+.input-field:hover {
+  color: #023e7d;
+  border: 1px solid #023e7d;
+}
+
+input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+  padding: 0px 2px;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #012a4a;
+  font-weight: 700;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #023e7d;
+}
+
+.option {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.option label.text-muted {
+  display: block;
+  cursor: pointer;
+}
+
+.option input {
+  display: none;
+}
+
+.btn.btn-block {
+  border-radius: 20px;
+  background-color: #012a4a;
+  color: #fff;
+}
+
+.btn.btn-block:hover {
+  background-color: #023e7d;
+}
+
+/* media queries */
+@media (max-width: 1200px) {
+  .col {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .up-bg {
+    background-image: url("images/indexpage/mobile.jpg");
+    height: 400px;
+    background-size: cover;
+  }
+
+  .hotel-name h1,
+  .hotel-name span {
+    font-size: 12rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .wrapper {
+    margin: 20px;
+  }
+
+  .hotel-name h1,
+  .hotel-name span {
+    font-size: 10rem;
+  }
+
+  #bookingbtn {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 424px) {
+  .up-bg {
+    background-image: url("images/indexpage/mobile2.jpg");
+    height: 300px;
+  }
+
+  .wrapper {
+    padding: 50px 20px;
+    margin: 5px;
+  }
+
+  .hotel-name h1,
+  .hotel-name span {
+    font-size: 8.2rem;
+  }
+
+  #bookingbtn {
+    font-size: 1.5rem;
+  }
+}

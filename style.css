@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Mono&family=Francois+One&family=Kaushan+Script&family=Roboto:wght@400&display=swap');
+* {
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ccdbfd00;
+    padding: 4rem 4%;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: none;
+}
+
+
+
+
+.navbar-item a {
+    font-size: 1.7rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    background: #e2eafc;
+    color: #001845;
+}
+
+
+.navbar-item a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background: #001845;
+}
+
+
+
+
+/* footer */
+
+
+.main-footer {
+    padding: 70px 4%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #001233;
+}
+
+.main-footer h1 {
+    font-size: 22px;
+    line-height: 117%;
+    color: #ccdbfd;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.main-footer h2 {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.main-footer ul li a {
+    color: #ffffffcc;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #023e7d;
+    font-size: 17px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logoinfo .logo {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #ccdbfd;
+    box-shadow: 27px 9px 119px 0px rgba(80,227,194,1);
+}
+
+.logoinfo h2{
+    margin-top: 20px;
+    font-family: 'Bree Serif', serif;
+}
+
+.contact-details li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contact-details .fa {
+    color: #f1f1f1;
+    margin-right: 10px;
+}
+
+.sociallogos {
+    padding: 20px 0;
+}
+
+.sociallogos .logobox a {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 25%;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.com ul{
+    list-style: none;
+}
+
+.com ul li {
+    padding: 5px 0;
+}
+
+.fa-instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.fa-linkedin:hover{
+    background-color:  #0A66C2;
+}
+.fa-facebook:hover{
+    background: linear-gradient(to bottom, #3A5795 0%, #2B4886 100%);
+}
+.fa-youtube-play:hover{
+    background-color: red;
+}
+
+.copyright-txt{
+    margin-top: 10px;
+    font-family: 'Fira Mono', monospace;
+}
+
+
+
+
+
+/* media queries */
+@media(max-width:991px){
+
+    html{
+        font-size: 50%;
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+    .logoinfo .logo {
+        box-shadow: 1px 2px 80px 0px rgba(80,227,194,1);
+    }
+   
+
+}
+
+@media (max-width:830px){
+
+    .nav
+
+    .main-navbar{
+        display: block;
+    }
+    
+
+
+
+    .home .home-slider .slide .content h3{
+        font-size: 5rem;
+    }
+
+    .main-footer {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info {
+        padding: 20px 0;
+    }
+
+    .logoinfo {
+        padding-left: 90px;
+        padding-right: 90px;
+    } 
+    .logoinfo .logo {
+        box-shadow: 1px 2px 60px 0px rgba(80,227,194,1);
+    }
+    
+}
+@media (max-width: 600px) {
+    #navbar-img img{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-footer {
+        grid-template-columns: 1fr;
+    }
+
+    .sociallogos {
+        padding: 20px 0;
+    }
+
+    .com {
+        padding: 20px 0;
+    }
+
+    .logoinfo {
+        padding: 10px 80px;
+    } 
+
+    .logoinfo .logo {
+        box-shadow: 1px 2px 60px 0px rgba(80,227,194,1);
+    }
+}
+
