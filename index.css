@@ -104,7 +104,13 @@ header {
 .room-type .row {
   display: flex;
 }
+.room-type .col {
+  margin-bottom: 3%;
+}
 
+.card-img-top{
+  min-width: 300px ;
+}
 .card-title {
   display: flex;
   justify-content: space-between;
